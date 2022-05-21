@@ -1,0 +1,19 @@
+
+
+.grid-container{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid;
+    width: 30%;
+    grid-gap: 50px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: cyan;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+}

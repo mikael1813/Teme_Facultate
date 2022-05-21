@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ModificaLoc">
+   <children>
+      <Label layoutX="229.0" layoutY="14.0" text="Modifica Loc">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="184.0" layoutY="101.0" text="Numar" />
+      <Label layoutX="184.0" layoutY="153.0" text="Rand" />
+      <Label layoutX="184.0" layoutY="200.0" text="Loja" />
+      <Label layoutX="184.0" layoutY="245.0" text="Pret" />
+      <TextField layoutX="265.0" layoutY="97.0" />
+      <TextField layoutX="265.0" layoutY="149.0" />
+      <TextField layoutX="265.0" layoutY="196.0" />
+      <TextField layoutX="265.0" layoutY="241.0" />
+      <Button layoutX="274.0" layoutY="347.0" mnemonicParsing="false" text="Modifica Loc" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+;postordine(l1..ln) = (l1), daca n=1
+;                   = postordine(l2) (+) (l1), daca n=2
+;                   = postordine(l2) (+) postordine(l3) (+) (l1), altfel
+
+
+(defun postordine (L)
+	(cond
+		((null (cdr L)) (list (car L)))
+		((null (cdr (cdr L))) (append (postordine (car (cdr L))) (list (car L))))
+		(t (append (postordine (car (cdr L))) (postordine (car (cdr (cdr L)))) (list (car L))))
+))
+
+
+
+;(postordine (list 'a (list 'b (list 'x) (list 'y)) (list 'c (list 'd) (list 'e (list 'z)))))

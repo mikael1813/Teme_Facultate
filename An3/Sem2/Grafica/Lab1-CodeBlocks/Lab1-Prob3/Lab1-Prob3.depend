@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1646322573 source:c:\info an 3\sem2\grafica\lab1-codeblocks\lab1-prob3\main.cpp
+	<GLFW/glfw3.h >
+	<GL/glut.h >
+
+1646323036 source:c:\info an 3\sem2\grafica\lab1-codeblocks\lab1-prob3\cerc.cpp
+	<GLFW/glfw3.h >
+	<GL/glut.h >
+
+1647526888 source:c:\info\info an 3\sem2\grafica\lab1-codeblocks\lab1-prob3\cerc.cpp
+	<GLFW/glfw3.h >
+	<GL/glut.h >
+

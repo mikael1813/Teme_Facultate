@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "domain.Game" table = "Game">
+
+        <meta attribute = "class-description">
+            This class contains the employee detail.
+        </meta>
+
+        <id name = "id" type = "int" column = "id">
+            <generator class="increment"/>
+        </id>
+
+        <property name = "u1" column = "u1" type = "int"/>
+        <property name = "u2" column = "u2" type = "int"/>
+        <property name = "u3" column = "u3" type = "int"/>
+        <property name = "cuv1" column = "cuv1" type = "string"/>
+        <property name = "cuv2" column = "cuv2" type = "string"/>
+        <property name = "cuv3" column = "cuv3" type = "string"/>
+
+    </class>
+</hibernate-mapping>

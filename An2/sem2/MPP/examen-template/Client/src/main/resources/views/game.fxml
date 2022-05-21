@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.GameController">
+   <children>
+      <Label layoutX="158.0" layoutY="44.0" text="Oponent1" />
+      <Label layoutX="380.0" layoutY="44.0" text="Oponent2" />
+      <TextField fx:id="txt1" layoutX="111.0" layoutY="71.0" />
+      <TextField fx:id="txt2" layoutX="333.0" layoutY="71.0" />
+      <TextField fx:id="txt3" layoutX="226.0" layoutY="155.0" />
+      <TextField fx:id="txt4" layoutX="111.0" layoutY="313.0" />
+      <TextField fx:id="txt5" layoutX="333.0" layoutY="313.0" />
+      <Label layoutX="286.0" layoutY="117.0" text="Cuvant" />
+      <Label layoutX="146.0" layoutY="282.0" text="Caracteristica1" />
+      <Label layoutX="368.0" layoutY="282.0" text="Caracteristica2" />
+      <Button layoutX="278.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#send" text="Send" />
+   </children>
+</AnchorPane>

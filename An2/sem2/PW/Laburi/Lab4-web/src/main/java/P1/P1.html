@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="cars">Choose a car:</label>
+
+<select name="cars" id="cars" multiple>
+    <option value="Volvo">Volvo</option>
+    <option value="Saab">Saab</option>
+    <option value="Mercedes">Mercedes</option>
+    <option value="Audi">Audi</option>
+</select>
+
+<label for="fastcars">Choose a country:</label>
+
+<select name="fastcars" id="fastcars" ondblclick="myFunction()" multiple>
+    <option value="Ferrari">Ferrari</option>
+    <option value="Bugati">Bugati</option>
+    <option value="GTX">GTX</option>
+</select>
+<script src = "../jquery-3.6.0.min.js" ></script>
+<script>
+    $(document).ready(function (){
+       $("#cars").dblclick(function (){
+           var selected = $(this).children("option:selected");
+           $(this).children('option:selected').remove();
+           $("#fastcars").append(new Option(selected.val(),selected.val()));
+       });
+    });
+    $(document).ready(function (){
+        $("#fastcars").dblclick(function (){
+            var selected = $(this).children("option:selected");
+            $(this).children('option:selected').remove();
+            $("#cars").append(new Option(selected.val(),selected.val()));
+        });
+    });
+
+</script>
+
+
+</body>
+</html>

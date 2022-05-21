@@ -1,0 +1,57 @@
+syntax = "proto3";
+package app.protocol;
+
+option java_package = "protobuffprotocol";
+option java_outer_classname = "ChatProtobufs";
+
+message Utilizator{
+  int32 id = 1;
+  string user = 2;
+  string parola = 3;
+}
+
+message Inscriere{
+  int32 id = 1;
+  Participant participant = 2;
+  Proba proba = 3;
+}
+message Participant{
+  int32 id = 1;
+  string nume = 2;
+  int32 varsta = 3;
+}
+message Proba{
+  int32 id = 1;
+  float Distanta = 2;
+  string stil = 3;
+}
+
+message Request {
+  enum Type {Unkown = 0; Login = 1; Logout = 2; Get_Probe = 3; Get_Participanti_Dupa_Probe = 4 ;Get_Probe_Dupa_Participant = 5;Inscrie = 6;Get_Nr_Participanti = 7;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+
+  Utilizator user = 2;
+  Proba proba = 3;
+  Participant participant = 4;
+  Participant participnatNou = 5;
+  repeated Proba listProbe = 6;
+
+}
+
+message Response{
+  enum Type {Unknown = 0; Ok = 1; Error = 2; Get_Probe = 3; Get_Participanti_Dupa_Probe = 4 ;Get_Probe_Dupa_Participant = 5;Get_Nr_Participanti = 6;New_Inscriere = 7 ;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  string error = 2;
+  repeated Proba probe = 3;
+  repeated Participant participanti = 4;
+  repeated Proba probeParticipant = 5;
+  repeated int32 nrParticipnati = 6;
+}

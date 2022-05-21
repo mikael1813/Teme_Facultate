@@ -1,0 +1,2 @@
+image inpainting - asa se numeste sa umpli lipsa dintro imagine
+object detection - r cnn

@@ -1,0 +1,8 @@
+Exception thrown at 0xDEADBEEF. in Intro.exe: 0xC0000005 : Access violation executing location 0xDEADBEEF.
+
+cand dau run sa apara deadbeef.
+schimb inputul la functia testFunction
+
+trb sa calculez return addr cred.
+
+e optionala da se primesc puncte bonus.

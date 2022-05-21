@@ -1,0 +1,30 @@
+;nrap(e,L) = 0,daca L=e
+;				= 1,daca L e atom
+;				= nrap(l1)*nrap(l2)*...*nrap(ln),altfel
+
+(defun nrap(e L)
+	(cond
+		((equal L e) 0)
+		((atom L) 1)
+		(t (apply #'* (mapcar #'(lambda(L)
+									(nrap e L)
+								)
+								L
+						)
+			)
+		)
+	)
+)
+
+;nod(e,l1..ln) = true,daca nrap(e,L) = 0
+;			   = false, altfel	
+
+(defun nod(e L)
+	(cond
+		((equal (nrap e L) 0) t)
+		(t nil)
+	)
+
+)
+
+;(nod 'a '(1 (a (3 (4 a) a)) (7 (a 9))))

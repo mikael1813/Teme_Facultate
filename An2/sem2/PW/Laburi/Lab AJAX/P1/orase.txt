@@ -1,0 +1,5 @@
+(Oras1, Oras2)
+(Oras1, Oras3)
+(Oras2, Oras4)
+(Oras2, Oras5)
+(Oras6, Oras7)

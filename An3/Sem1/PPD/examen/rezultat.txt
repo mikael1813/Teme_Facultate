@@ -1,0 +1,204 @@
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=10, time=2022-01-21T13:59:16.400105800}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.400105800}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.400105800}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=6, time=2022-01-21T13:59:16.400105800}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=6, time=2022-01-21T13:59:16.400105800}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=14, time=2022-01-21T13:59:16.398164200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=13, time=2022-01-21T13:59:16.446509700}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=17, time=2022-01-21T13:59:16.446509700}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=17, time=2022-01-21T13:59:16.446509700}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=17, time=2022-01-21T13:59:16.446509700}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=13, time=2022-01-21T13:59:16.446509700}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=9, time=2022-01-21T13:59:16.442359200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=19, time=2022-01-21T13:59:16.467098400}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=19, time=2022-01-21T13:59:16.467065200}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=19, time=2022-01-21T13:59:16.467098400}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=19, time=2022-01-21T13:59:16.467154700}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=19, time=2022-01-21T13:59:16.467065200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=16, time=2022-01-21T13:59:16.467154700}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=14, time=2022-01-21T13:59:16.487631800}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.487631800}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=14, time=2022-01-21T13:59:16.487631800}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=14, time=2022-01-21T13:59:16.487631800}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.487631800}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.483470400}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=17, time=2022-01-21T13:59:16.509144900}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=17, time=2022-01-21T13:59:16.509144900}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=17, time=2022-01-21T13:59:16.509144900}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=20, time=2022-01-21T13:59:16.507963600}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=17, time=2022-01-21T13:59:16.509144900}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=17, time=2022-01-21T13:59:16.507963600}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=7, time=2022-01-21T13:59:16.529599300}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=15, time=2022-01-21T13:59:16.529599300}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=11, time=2022-01-21T13:59:16.529599300}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=11, time=2022-01-21T13:59:16.528600300}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=3, time=2022-01-21T13:59:16.530599500}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=0, time=2022-01-21T13:59:16.532701200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=15, time=2022-01-21T13:59:16.550705300}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=15, time=2022-01-21T13:59:16.550705300}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=7, time=2022-01-21T13:59:16.550705300}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=7, time=2022-01-21T13:59:16.550705300}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=17, time=2022-01-21T13:59:16.542705}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=11, time=2022-01-21T13:59:16.547705}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=6, time=2022-01-21T13:59:16.571937300}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=6, time=2022-01-21T13:59:16.571937300}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=6, time=2022-01-21T13:59:16.571937300}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=10, time=2022-01-21T13:59:16.571937300}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=17, time=2022-01-21T13:59:16.566705100}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=14, time=2022-01-21T13:59:16.567767200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=16, time=2022-01-21T13:59:16.592976200}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=4, time=2022-01-21T13:59:16.592976200}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=12, time=2022-01-21T13:59:16.592976200}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=12, time=2022-01-21T13:59:16.592976200}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=12, time=2022-01-21T13:59:16.587900900}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=1, time=2022-01-21T13:59:16.592976200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=16, time=2022-01-21T13:59:16.592976200}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=6, time=2022-01-21T13:59:16.625013600}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=12, time=2022-01-21T13:59:16.592976200}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=12, time=2022-01-21T13:59:16.592976200}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=2, time=2022-01-21T13:59:16.608307300}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.659179500}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.659179500}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.659179500}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.659179500}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.659179500}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.690430}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.690430}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.674804300}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.690430}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.690430}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.722621500}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.722621500}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.722621500}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.722621500}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.722662200}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.743814400}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.743814400}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.743814400}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.743814400}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.743814400}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.775267500}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.775267500}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.775267500}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.775267500}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.775267500}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.806654600}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.806654600}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.806654600}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.806654600}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.806654600}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.844055300}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.844055300}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.844055300}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.844055300}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.844199200}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.876255900}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.876255900}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.876255900}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.876255900}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.876255900}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.907502900}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.907502900}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.907502900}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.907502900}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.907502900}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.923126800}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.923126800}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.923126800}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.923126800}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.923126800}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.976391500}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.976391500}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.976391500}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.976391500}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.976391500}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.007643200}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.007643200}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.007643200}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:16.992020200}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.007643200}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.044569400}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.044569400}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.023915900}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.023915900}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.044569400}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.075976100}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.075976100}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.075976100}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.075976100}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.075976100}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.107419400}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.107419400}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.107419400}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.107419400}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.107419400}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=2, time=2022-01-21T13:59:16.601193200}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=12, time=2022-01-21T13:59:16.552705200}
+Verificat
+Key = 0, Value = Valoare{operatie=depunere, nr_obiecte=12, time=2022-01-21T13:59:17.122499400}
+Key = 1, Value = Valoare{operatie=depunere, nr_obiecte=8, time=2022-01-21T13:59:17.122499400}
+Key = 2, Value = Valoare{operatie=depunere, nr_obiecte=16, time=2022-01-21T13:59:17.122499400}
+Key = 3, Value = Valoare{operatie=depunere, nr_obiecte=8, time=2022-01-21T13:59:17.122499400}
+Key = 4, Value = Valoare{operatie=depunere, nr_obiecte=18, time=2022-01-21T13:59:17.107419400}
+Key = 5, Value = Valoare{operatie=preluare, nr_obiecte=7, time=2022-01-21T13:59:17.126499500}
+Key = 6, Value = Valoare{operatie=preluare, nr_obiecte=10, time=2022-01-21T13:59:17.126499500}
+Key = 7, Value = Valoare{operatie=preluare, nr_obiecte=13, time=2022-01-21T13:59:17.124499700}
+Verificat

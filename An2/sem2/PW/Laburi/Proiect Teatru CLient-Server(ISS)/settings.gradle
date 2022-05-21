@@ -1,0 +1,7 @@
+rootProject.name = 'Proiect Teatru CLient-Server(ISS)'
+include 'Client'
+include 'Model'
+include 'Persistance'
+include 'Server'
+include 'Services'
+

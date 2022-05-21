@@ -1,0 +1,105 @@
+
+%{
+#include <stdio.h>
+
+int yylex();
+int yyerror(char *s);
+extern int yylineno;
+
+%}
+
+
+%token ID NUM OTHER SEMICOLON SEPARATOR READ PRINT INT STRING STRUCT IF ELSE WHILE
+%token CUVANT OP_LOGIC OP_ARITMETIC SEMN OP_RELATIONAL VIRGULA EQUAL
+%token LEFTP RIGHTP LEFTPP RIGHTPP
+
+%type <name> ID
+%type <number> NUM
+
+%union{
+          char name[255];
+    int number;
+}
+
+%%
+
+list_instr:
+                instr SEMICOLON list_instr      {printf("OK\n");}
+          |     instr SEMICOLON         {printf("OK\n");}
+;
+
+instr:
+        intrare
+        |       iesire
+        |       atribuire
+        |       instr_if
+        |       while
+        |       list_declare
+;
+
+intrare:
+        READ ID         {/*printf("READ\n");*/}
+;
+iesire:
+        PRINT expr
+;
+atribuire:
+                ID EQUAL expr   {/*printf("ATRIBUIRE\n");*/}
+;
+expr:
+        ID      {/*printf("ID\n");*/}
+        |       const
+        |       ID OP_ARITMETIC expr
+        |       const OP_ARITMETIC expr
+;
+const:
+        CUVANT
+        |       NUM
+;
+instr_if:
+                IF LEFTP list_cond RIGHTP LEFTPP list_instr RIGHTPP
+        |       IF LEFTP list_cond RIGHTP LEFTPP list_instr RIGHTPP ELSE LEFTPP list_instr RIGHTPP
+;
+list_cond:
+                cond
+        |       list_cond OP_LOGIC cond
+;
+cond:
+        expr OP_RELATIONAL expr
+;
+while:
+        WHILE LEFTP list_cond RIGHTP LEFTPP list_instr RIGHTPP
+;
+list_declare:
+                tip ID  {/*printf("TIP\n");*/}
+                |       tip list_ID
+;
+list_ID:
+        ID VIRGULA list_ID
+        |       ID
+;
+tip:
+        INT
+        |       STRING
+        |       tip_compus
+;
+tip_compus:
+                STRUCT ID LEFTPP list_declare RIGHTPP
+;
+
+
+
+
+%%
+
+int yyerror(char *s)
+{
+        printf("Error | Line: %d\n%s\n",yylineno,s);
+        return 0;
+}
+
+int main()
+{
+    yyparse();
+    return 0;
+}

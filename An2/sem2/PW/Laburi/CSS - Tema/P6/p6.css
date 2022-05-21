@@ -1,0 +1,25 @@
+.center{
+    text-align: center;
+    width: 20%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.background{
+    background-image: url("line.png");
+    width: 586px;
+    font-family: monospace;
+    font-size: 28px;
+    letter-spacing: 21.3px;
+}
+
+.background2{
+    background-image: url("line.png");
+    width: 290px;
+    font-family: monospace;
+    font-size: 28px;
+    letter-spacing: 21.5px;
+}

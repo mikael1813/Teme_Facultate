@@ -1,0 +1,8 @@
+rootProject.name = 'examen-restanta'
+include 'Model'
+include 'Persistance'
+include 'Server'
+include 'Services'
+include 'Client'
+include 'Rest'
+

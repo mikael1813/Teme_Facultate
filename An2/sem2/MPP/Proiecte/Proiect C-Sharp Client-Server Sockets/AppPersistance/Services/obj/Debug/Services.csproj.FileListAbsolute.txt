@@ -1,0 +1,11 @@
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\Services\bin\Debug\Services.dll.config
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\Services\bin\Debug\Services.dll
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\Services\bin\Debug\Services.pdb
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\Services\bin\Debug\AppModel.dll
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\Services\bin\Debug\AppModel.pdb
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\Services\bin\Debug\AppModel.dll.config
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\Services\obj\Debug\Services.csprojAssemblyReference.cache
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\Services\obj\Debug\Services.csproj.CopyComplete
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\Services\obj\Debug\Services.dll
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\Services\obj\Debug\Services.pdb

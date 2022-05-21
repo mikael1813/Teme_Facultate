@@ -1,0 +1,7 @@
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proeict C-Sharp Client-Server\C-Sharp Client-Server\C-Sharp Client-Server\bin\Debug\C-Sharp Client-Server.exe.config
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proeict C-Sharp Client-Server\C-Sharp Client-Server\C-Sharp Client-Server\bin\Debug\C-Sharp Client-Server.exe
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proeict C-Sharp Client-Server\C-Sharp Client-Server\C-Sharp Client-Server\bin\Debug\C-Sharp Client-Server.pdb
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proeict C-Sharp Client-Server\C-Sharp Client-Server\C-Sharp Client-Server\obj\Debug\C-Sharp Client-Server.csprojAssemblyReference.cache
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proeict C-Sharp Client-Server\C-Sharp Client-Server\C-Sharp Client-Server\obj\Debug\C-Sharp Client-Server.csproj.CoreCompileInputs.cache
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proeict C-Sharp Client-Server\C-Sharp Client-Server\C-Sharp Client-Server\obj\Debug\C-Sharp Client-Server.exe
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proeict C-Sharp Client-Server\C-Sharp Client-Server\C-Sharp Client-Server\obj\Debug\C-Sharp Client-Server.pdb

@@ -1,0 +1,14 @@
+;interclasare(l1..ln,x1..xn) = [] , daca l si x sunt vide
+; 							 = l , daca x e vida
+;							 = x , daca l e vida
+;							 = l1 (+) interclasare(l2..ln,x1..xn)), daca l1<x1
+;                            = x1 (+) interclasare(l1..ln,x2..xn)), daca x1<l1
+
+(defun interclasare (L X)
+	(cond 
+		((and (null L) (null X)) (list))
+		((null L) X)
+		((null X) L)
+		((< (car L) (car X)) (append (list (car L)) (interclasare (cdr L) X)))
+		(t (append (list (car X)) (interclasare L (cdr X))))
+))

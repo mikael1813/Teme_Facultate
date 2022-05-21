@@ -1,0 +1,36 @@
+header{
+    background-color: red;
+    height: 100px;
+}
+
+.galben{
+    background-color: yellow;
+    height: 25px;
+}
+
+footer{
+    background-color: pink;
+    height: 60px;
+}
+
+.verde{
+    background-color: green;
+    width: 100%;
+    height: max-content;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.box .content {
+    flex: 1 1 auto;
+}
+

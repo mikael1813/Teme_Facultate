@@ -1,0 +1,3 @@
+enum Operatie {
+    depunere, preluare
+}

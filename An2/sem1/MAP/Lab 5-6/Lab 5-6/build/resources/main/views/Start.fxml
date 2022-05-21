@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.StartController">
+   <children>
+      <TableView fx:id="tableViewUsers" layoutX="22.0" layoutY="190.0" onMouseClicked="#handleUserClicked" prefHeight="232.0" prefWidth="323.0">
+        <columns>
+          <TableColumn fx:id="tableColumnUserId" prefWidth="50.20001220703125" text="Id" />
+          <TableColumn fx:id="tableColumnUserFName" prefWidth="134.0" text="Nume" />
+            <TableColumn fx:id="tableColumnUserLName" prefWidth="138.0" text="Prenume" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableViewFriends" layoutX="435.0" layoutY="59.0" prefHeight="304.0" prefWidth="332.0">
+        <columns>
+          <TableColumn fx:id="tableColumnFriendId" prefWidth="53.20001220703125" text="Id" />
+          <TableColumn fx:id="tableColumnFriendFName" prefWidth="97.20001220703125" text="Nume" />
+            <TableColumn fx:id="tableColumnFriendLName" prefWidth="90.79998779296875" text="Prenume" />
+            <TableColumn fx:id="tableColumnFriendDate" prefWidth="88.800048828125" text="Data" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="25.0" text="Filtreaza Utilizatorii">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="160.0" prefHeight="26.0" prefWidth="97.0" text="Utilizatori">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="548.0" layoutY="20.0" prefHeight="36.0" prefWidth="105.0" text="Prieteni">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0e18e" height="497.0" layoutX="366.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+      <Label layoutX="51.0" layoutY="63.0" text="Id" />
+      <Label layoutX="40.0" layoutY="94.0" text="Nume" />
+      <Label layoutX="32.0" layoutY="125.0" text="Prenume" />
+      <TextField fx:id="userFilterId" layoutX="93.0" layoutY="59.0" onKeyPressed="#handleUserFilterId" />
+      <TextField fx:id="userFilterFName" layoutX="93.0" layoutY="90.0" onKeyPressed="#handleUserFilterFName" />
+      <TextField fx:id="userFilterLName" layoutX="93.0" layoutY="121.0" onKeyPressed="#handleUserFilterLName" />
+      <Button fx:id="buttonAddFriend" layoutX="40.0" layoutY="510.0" mnemonicParsing="false" onMouseClicked="#handleAddFriend" text="Add new Friend">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteFriend" layoutX="526.0" layoutY="378.0" mnemonicParsing="false" onMouseClicked="#handleDeleteFriend" prefHeight="44.0" prefWidth="149.0" text="Delete">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0e18e" height="46.0" layoutY="453.0" stroke="BLACK" strokeType="INSIDE" width="778.0" />
+      <Button layoutX="233.0" layoutY="510.0" mnemonicParsing="false" onMouseClicked="#handleFriendRequests" text="Friend Requests">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonSendMessage" layoutX="435.0" layoutY="510.0" mnemonicParsing="false" onMouseClicked="#handleSendMessage" text="Send Message">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonMessages" layoutX="623.0" layoutY="510.0" mnemonicParsing="false" onMouseClicked="#handleShowMessages" text="Messages">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

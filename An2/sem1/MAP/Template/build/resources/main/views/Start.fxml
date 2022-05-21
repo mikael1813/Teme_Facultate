@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="462.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.StartController">
+   <children>
+      <TableView fx:id="tableViewUsers" layoutX="25.0" layoutY="140.0" prefHeight="230.0" prefWidth="318.0">
+        <columns>
+          <TableColumn fx:id="tableColumnUserId" prefWidth="51.199989318847656" text="ID" />
+          <TableColumn fx:id="tableColumnUserFName" prefWidth="119.39999389648438" text="First Name" />
+            <TableColumn fx:id="tableColumnUserLName" prefWidth="67.5999755859375" text="Last Name" />
+            <TableColumn fx:id="tableColumnUserPosition" prefWidth="75.0" text="Position" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textFieldUser" layoutX="226.0" layoutY="26.0" />
+      <Label layoutX="116.0" layoutY="30.0" text="Current User" />
+      <Label layoutX="141.0" layoutY="100.0" text="Utilizatorii activi" />
+      <Button fx:id="buttonInactiv" layoutX="32.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#handleButtonInactivClicked" text="Ma Retrag" />
+      <Button fx:id="buttonActiv" layoutX="240.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#handleButtonActivClicked" text="Revin" />
+      <TextField fx:id="textFieldMessage" layoutX="401.0" layoutY="377.0" />
+      <Button fx:id="buttonSendMesaj" layoutX="450.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#handleSend" text="Send" />
+      <TableView fx:id="tableViewMessage" layoutX="375.0" layoutY="148.0" prefHeight="200.0" prefWidth="335.0">
+        <columns>
+          <TableColumn fx:id="tableViewMessageSender" prefWidth="75.0" text="Nume" />
+          <TableColumn fx:id="tableViewMessagePrivacy" prefWidth="75.0" text="Privatitate" />
+            <TableColumn fx:id="tableViewMessageReceiver" prefWidth="75.0" text="Destinatar" />
+            <TableColumn fx:id="tableViewMessageMesaj" prefWidth="108.79997558593749" text="Mesaj" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

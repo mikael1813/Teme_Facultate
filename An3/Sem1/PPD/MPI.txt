@@ -1,0 +1,13 @@
+broadcast - transmite la toate pocesele ceva(inclusiv lui)
+
+scatter - imparte in chunck-uri si le trimite pe fiecare la procese diferite(cred)
+
+getter - opusul la scatter cica
+
+reduce - face o suma,avg,max,min, ceva de genu
+
+bariier - bariera
+
+sincron - 
+
+asincron - 

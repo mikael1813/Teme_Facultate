@@ -1,0 +1,93 @@
+1.
+
+	- <program> -> <lista_instr>
+	- <lista_instr> -> <instr>;<lista_instr> | <instr>;
+	- <instr> -> <intrare> | <iesire> | <atribuire> | <instr_if> | <while> | <list_declare>
+	- <intrare> -> read <ID>
+	- <iesire> -> print <expr>
+	- <declare> -> <tip> <list_ID>
+	- <tip> -> int | string | <tip_compus>
+	- <tip_compus> -> 'struct' <ID> '{<list_declare>}'
+	- <list_declare> -> <tip> <ID> | <tip> <lista_ID>
+	- <list_ID> -> <ID>,<list_ID> | <ID>
+	- <atribuire> -> <ID> = <expr>
+	- <expr> -> <ID> | const | <ID> <operator_aritmetic> <expr> | const <operator_aritm> <expr>
+	- <instr_if> -> if(<list_cond>) { <lista_instr> } | if(<list_cond>) { <lista_instr> } else { <lista_instr> }
+	- <list_cond> -> <cond> | <list_cond> <operator_logic> <cond>
+	- <cond> -> <expr> <operator_relational> <expr>
+	- <while> -> while(<list_cond>) { <lista_instr> }
+	- <ID> -> [a-zA-Z]+[0-9]*
+	- <const> -> <numar> | <cuvant>
+	- <numar> -> [-]?0.[0-9]+ | [-]?[1-9]+[0-9]*[.[0-9]+]? | 0
+	- <cuvant> -> ".*"i
+	- <operator_logic> -> && | ||
+	
+2.
+a.
+	
+		int raza,perimetru,arie;
+		read raza;
+		perimetru = 2*3.14*raza;
+		arie = 3.14*raza*raza;
+		print perimetru;
+		print arie;
+	
+b.
+	
+		int a,b,cmmdc,i;
+		read a;
+		read b;
+		cmmdc = 1;
+		i=2;
+		while(i<a && i<b)
+		{
+			if(a%i==0 && b%i==0){
+				cmmdc = i;
+			}
+			i = i + 1;
+		};
+		print cmmdc;
+	
+	
+c.
+	
+		int i,n,x,sum;
+		sum = 0;
+		i=0;
+		read n;
+		while(i < n)
+		{
+			i = i + 1;
+			cin>>x;
+			sum=sum+x;
+		};
+		print sum;
+	
+	
+	
+	
+3.
+
+a.
+
+	
+		int var1 var2,var3; // lipseste ','
+		read var1;
+		var2 = 2*3.14*var1;
+		var3 = 3.14*var1*var1;
+		print var2 // lipseste ';'
+		print var3;
+	
+	
+b. 
+
+	
+		int *a,var2,!var3;  // variabilele incep cu * si nu exista ++ in mlp-ul meu
+		read a;
+		a++;
+		var2 = 2*3.14*a;
+		var3 = 3.14*a*a;
+		print var2;
+		print var3;
+	
+		

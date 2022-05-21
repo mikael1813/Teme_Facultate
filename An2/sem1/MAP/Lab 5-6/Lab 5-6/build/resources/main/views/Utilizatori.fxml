@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="432.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.UsersController">
+   <children>
+      <Button fx:id="buttonAddFriend" layoutX="243.0" layoutY="376.0" mnemonicParsing="false" onMouseClicked="#handleFriendRequest" text="Trimite Cerere de Prietenie" />
+      <TableView fx:id="tableViewUsers" layoutX="100.0" layoutY="137.0" prefHeight="200.0" prefWidth="451.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tabceColumnFName" prefWidth="199.99993896484375" text="Nume" />
+            <TableColumn fx:id="tabceColumnLName" prefWidth="176.00003051757812" text="Prenume" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textFieldName" layoutX="356.0" layoutY="77.0" onKeyPressed="#handleFilterName" />
+      <Label layoutX="120.0" layoutY="75.0" text="Filtreaza dupa nume">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="26.0" text="Potentiali Prieteni">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

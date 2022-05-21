@@ -1,0 +1,49 @@
+-ip reale(routabile, publice)
+-ip false(non routabile, private)
+
+
+
+10.0.0.0/255.0.0.0 /8 2^24
+1 clasa falsa A cu 2^24 adrese ip
+
+172.16.0.0/255.255.0.0 /16
+172.17.0.0/255.255.0.0 /16
+...
+172.31.0.0/16
+16 clase false B cu 2^16 adrese ip fiecare
+
+192.1268.0.0/24 /255.255.255.0
+192.1268.1.0/24 /255.255.255.0
+192.1268.2.0/24 /255.255.255.0
+...
+192.1268.255.0/24 /255.255.255.0
+256 de clase false C fiecare cu 2^8 adrese IP
+
+-(S)NAT
+-DHCP
+-Net Mask
+-Default Gateway
+-Socket-uri
+-TCP
+-UDP
+-Stiva tcp ip
+-dirijare
+-routare
+-adrese ip
+-clase de adrese ip
+-protocoale dhcp,arp
+-adrese MAC
+-topologi de adrese locale
+-DNS
+-clase false
+-hub switch
+
+
+
+-Cand un pachet ii trimis din reteaua locala in exterior
+i se inlocuiesste adresa sursa locala cu cea publica a routerului
+si se expediaza in internet
+
+
+
+O sa fie pe moodle un test de exemplu

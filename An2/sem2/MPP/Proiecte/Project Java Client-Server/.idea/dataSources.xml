@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Inot.db" uuid="66b14fa9-71e6-43cf-980e-0129bb4a5f53">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../../../../../mpp/databasesJava/Inot.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Inot_v2.db" uuid="c44f641a-eda0-4d63-ad59-accc8aef51d3">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\mpp\databasesJava\Inot_v2.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

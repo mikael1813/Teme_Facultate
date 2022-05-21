@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.FriendRequestsController">
+   <children>
+      <Label layoutX="269.0" layoutY="29.0" text="Friend Requests">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="29.0" layoutY="147.0" prefHeight="266.0" prefWidth="638.0">
+        <columns>
+            <TableColumn fx:id="tableColumnId" prefWidth="53.4000244140625" text="Id" />
+          <TableColumn fx:id="tableColumnFName" prefWidth="142.80001831054688" text="Nume" />
+          <TableColumn fx:id="tableColumnLName" prefWidth="137.4000244140625" text="Prenume" />
+            <TableColumn fx:id="tableColumnState" prefWidth="145.4000244140625" text="Stare" />
+            <TableColumn fx:id="tableColumnDate" minWidth="0.0" prefWidth="157.80001831054688" text="Data" />
+        </columns>
+      </TableView>
+      <Label layoutX="205.0" layoutY="100.0" text="for">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textName" layoutX="274.0" layoutY="99.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="buttonUndo" layoutX="244.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#handleUndo" text="Retrage cererea de prietenie">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonAccept" layoutX="103.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#handleAccept" text="Accepta">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonDecline" layoutX="551.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#handleDecline" text="Refuza">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="232.0" layoutY="14.0" text="Adauga Loc">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="74.0" text="Adauga un singur loc">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="168.0" text="Loja" />
+      <Label layoutX="40.0" layoutY="210.0" text="Numar" />
+      <Label layoutX="48.0" layoutY="260.0" text="Pret" />
+      <TextField layoutX="98.0" layoutY="164.0" />
+      <TextField layoutX="98.0" layoutY="206.0" />
+      <TextField layoutX="98.0" layoutY="256.0" />
+      <TextField layoutX="98.0" layoutY="119.0" />
+      <Label layoutX="45.0" layoutY="123.0" text="Rand" />
+      <Label layoutX="332.0" layoutY="81.0" text="Adauga">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="411.0" layoutY="83.0" prefHeight="26.0" prefWidth="27.0" />
+      <Label layoutX="459.0" layoutY="81.0" text="locuri pe randul">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="605.0" layoutY="83.0" prefHeight="26.0" prefWidth="27.0" />
+      <Label layoutX="417.0" layoutY="125.0" text="si loja">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="481.0" layoutY="127.0" prefHeight="26.0" prefWidth="27.0" />
+      <Label layoutX="529.0" layoutY="125.0" text="cu">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="403.0" layoutY="191.0" prefHeight="30.0" prefWidth="57.0" text="Pretul">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="476.0" layoutY="198.0" />
+      <Button layoutX="133.0" layoutY="328.0" mnemonicParsing="false" text="Adauga Loc" />
+      <Button layoutX="469.0" layoutY="265.0" mnemonicParsing="false" text="Adauga Locuri" />
+   </children>
+</AnchorPane>

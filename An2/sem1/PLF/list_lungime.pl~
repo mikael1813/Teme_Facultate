@@ -1,0 +1,5 @@
+len([],0).
+
+len([_|T],X):-
+    len(T,Rez),
+    X =:= Rez+1.

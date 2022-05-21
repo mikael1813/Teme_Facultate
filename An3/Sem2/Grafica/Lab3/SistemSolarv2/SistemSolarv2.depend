@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1649752920 source:c:\info\info an 3\sem2\grafica\lab3\sistemsolarv2\main.cpp
+	<GLFW/glfw3.h>
+	<GL/glut.h>
+	<unistd.h>
+	<math.h>
+	<iostream>
+

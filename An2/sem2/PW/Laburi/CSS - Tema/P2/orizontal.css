@@ -1,0 +1,36 @@
+.verde{
+    padding: 50px;
+    background-color: green;
+}
+
+.albastru{
+    background-color: #5252e5;
+    padding: 50px;
+    padding-bottom: 50px;
+}
+
+.rosu{
+    background-color: orangered;
+    padding: 50px;
+    width: 100%;
+}
+
+.galben{
+    background-color: yellow;
+    padding: 12px;
+    width: 10%;
+    display: grid;
+    grid-template-columns: auto;
+    border: 1px solid;
+}
+.border{
+    border: 1px solid #000000;
+}
+a{
+    display: block;
+}
+
+.verti{
+    display: flex;
+    flex-direction: row;
+}

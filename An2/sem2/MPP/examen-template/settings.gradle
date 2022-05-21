@@ -1,0 +1,8 @@
+rootProject.name = 'examen-template'
+include 'Client'
+include 'Model'
+include 'Persistance'
+include 'Server'
+include 'Services'
+include 'RestServices'
+

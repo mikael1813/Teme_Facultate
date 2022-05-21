@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="462.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.StartController">
+   <children>
+      <ComboBox fx:id="comboBox" layoutX="100.0" layoutY="98.0" onMouseClicked="#handleCombo" prefWidth="150.0" />
+      <TableView fx:id="tableView" layoutX="294.0" layoutY="114.0" onMouseClicked="#handleSelect" prefHeight="234.0" prefWidth="326.0">
+        <columns>
+          <TableColumn fx:id="tableColumnName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="tableColumnNoRooms" prefWidth="75.0" text="NoRooms" />
+            <TableColumn fx:id="tableColumnPrice" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="tableColumnType" prefWidth="100.00003662109373" text="Type" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

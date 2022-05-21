@@ -1,0 +1,13 @@
+De nu uitat:
+	- verific ca merge serverul
+	- sa am xml network_security_config.xml
+	- in DB Helper schimb campurile pentru noul ob din domain
+	- creez noul obiect din domain
+	- schimb in DBRepository si in FileRepository cu obiectul nou din domain
+	- schimb produsviewmodel dupa ob din domain
+	- modific server repository si apiinterface dupa obiect si cerinta
+	- server status receiver doar inlocuiesc obiect
+	- schimb url la websocket si server
+	- schimb service in f de cerinta
+	- daca mai e timp pot pune ca operati db sa fie dupa operati server in service
+	- sa afisez greseli la inputuri

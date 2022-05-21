@@ -1,0 +1,5 @@
+probelma 5 ,6 de la Tema 1a
+- o problema trb concurenta cu threaduri
+- o problema concurenta cu fork
+
+-pt threaduri ma ajuta http://www.cs.ubbcluj.ro/~ionutb/Retele/ (exemplu)

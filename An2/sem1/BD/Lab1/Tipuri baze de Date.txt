@@ -1,0 +1,10 @@
+-Ierarhic
+
+-Retea
+
+-Relational - Codd - relatie(relation) - fundamentat matematic - 1970
+	    - Date - 1989	
+
+-Obiectual
+
+-NoSQL

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red-border{
+            border: 4px solid #ff0000;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <label for="name">Nume:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="varsta">Varsta</label><br>
+    <input type="number" id="varsta" name="varsta" min="0" max="120"><br>
+    <label for="data">Data nasterii</label><br>
+    <input type="date" id="data" name="data"><br>
+    <label for="email">E-mail</label><br>
+    <input type="email" id="email" name="email"><br>
+    <button type="button" onclick="Test()">Trimite</button>
+</form>
+
+<script>
+    function Test() {
+        document.getElementById("name").removeAttribute("class");
+        document.getElementById("varsta").removeAttribute("class");
+        document.getElementById("data").removeAttribute("class");
+        document.getElementById("email").removeAttribute("class");
+
+        var name = document.getElementById("name").value;
+        var varsta = document.getElementById("varsta").value;
+        var data = document.getElementById("data").value;
+        var email = document.getElementById("email").value;
+        var string = "";
+        var ok = false;
+        if (name == "" || !/^[a-zA-Z]+$/.test(name)) {
+            string += "nume";
+            ok = true;
+            document.getElementById("name").setAttribute("class","red-border");
+            //document.getElementById("name").focus();
+        }
+        if (varsta == "" || !/^[1-9][0-9]*$/.test(varsta)) {
+            if (!ok) {
+                string += "varsta"
+            } else {
+                string += ", varsta"
+            }
+            document.getElementById("varsta").setAttribute("class","red-border");
+            ok = true;
+        }
+        if (data == "") {
+            if (!ok) {
+                string += "data nasteri"
+            } else {
+                string += ", data nasteri"
+            }
+            document.getElementById("data").setAttribute("class","red-border");
+            ok = true;
+        }
+        if (email == ""  || !(/^.+@.+\..+$/.test(email))) {
+            if (!ok) {
+                string += "email"
+            } else {
+                string += ", email"
+            }
+            document.getElementById("email").setAttribute("class","red-border");
+            ok = true;
+        }
+        if (!ok) {
+            alert("Datele sunt completate corect");
+        } else {
+            alert("Campurile " + string + " nu sunt completate corect");
+        }
+    }
+</script>
+
+</body>
+</html>

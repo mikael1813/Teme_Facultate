@@ -1,0 +1,4 @@
+Retele de Calculatoare:
+
+	-ipconfig
+	-ping "o adresa" (de ex: ping www.protv.ro)

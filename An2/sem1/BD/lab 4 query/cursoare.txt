@@ -1,0 +1,166 @@
+use FacultateV2;
+
+
+
+
+declare @id_test int, @test_name nvarchar(50)
+--set @id_test = (select TestID from Tests where TestID = 1)
+
+
+
+declare @id_table int, @table_name nvarchar(50), @nr_of_rows int
+
+
+
+declare @id_view int, @view_name nvarchar(50)
+
+
+
+declare cursor_teste cursor
+for select * from Tests
+
+
+
+open cursor_teste
+
+
+
+fetch next from cursor_teste into @id_test, @test_name
+while @@FETCH_STATUS = 0 begin
+--print(@id_test)
+--print(@b)
+insert into TestRuns values(@id_test, @test_name, getdate(), getdate())
+
+
+
+-- sa avem cursor in ambele sensuri
+declare cursor_tabele cursor scroll
+for select T.TableID, NoOfRows, Name from Tables T inner join TestTables TT on T.TableID = TT.TableID
+where TestID = @id_test
+order by Position
+
+
+
+open cursor_tabele
+
+
+
+fetch next from cursor_tabele into @id_table, @nr_of_rows, @table_name
+while @@FETCH_STATUS = 0 begin
+--deletes
+exec 'delete from ' + @table_name
+fetch next from cursor_tabele into @table_name
+end
+fetch prior -- prior pentru a folosi acelasi cursor => comment de la linia 40 -> 43
+close cursor_tabele
+deallocate cursor_tabele
+
+
+
+declare cursor_tabele cursor
+for select T.TableID, NoOfRows, Name from Tables T inner join TestTables TT on T.TableID = TT.TableID
+where TestID = @id_test
+order by Position desc
+
+
+
+open cursor_tabele
+
+
+
+fetch next from cursor_tabele into @id_table, @nr_of_rows, @table_name
+while @@FETCH_STATUS = 0 begin
+
+--inserts
+
+
+
+--inserturi in Burse
+--proceduri stocate
+--timpul
+--fct pentru time stamp
+declare @timp time = getdate();
+exec inserturi @table_name, @nr_of_rows
+insert into TestRunTables values(@id_test, @id_table, @timp, getdate())
+
+
+
+fetch next from cursor_tabele into @table_name
+end
+close cursor_tabele
+deallocate cursor_tabele
+
+
+
+declare cursor_views cursor
+for select V.ViewID, Name
+from Views V inner join TestViews TV on V.ViewID = TV.ViewID
+where TestID = @id_test
+
+
+
+open cursor_views
+
+
+
+fetch next from cursor_views into @id_view, @view_name
+while @@FETCH_STATUS = 0 begin
+declare @timp time = getdate();
+exec 'select * from' + @view_name
+insert into TestRunViews values(@id_test, @id_view, @timp, getdate())
+
+
+
+fetch next from cursor_views into @id_view, @view_name
+end
+
+
+
+close cursor_views
+deallocate cursor_views
+
+
+
+--update pe Tabela TestRuns - update la timpul final
+--
+fetch next from cursor_teste into @id_test, @test_name
+end
+
+
+
+close cursor_teste
+deallocate cursor_teste
+go
+
+
+
+
+create procedure inserturi (@table_name nvarchar(50), @nr_of_rows int)
+as
+begin
+if @table_name = 'Burse'
+exec insert_burse @nr_of_rows
+end
+go
+
+
+
+create procedure insert_burse (@nr_of_rows int)
+as
+begin
+declare @ID int = 1;
+while @ID <= @nr_of_rows begin
+insert into Burse values(@ID, 'tipergwergergrgui', 750.00)
+set @ID = @ID + 1;
+end
+end
+go
+
+
+
+insert_burse 2;
+go
+
+
+
+select format(getdate(), 'hh:mm:ss:tt');

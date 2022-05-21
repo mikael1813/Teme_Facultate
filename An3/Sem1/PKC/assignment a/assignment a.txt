@@ -1,0 +1,3 @@
+daca casutele sunt irelevante se completeaza cu x
+folosesc n pozitov
+la numere prime trb 3 iterati la cele composite unu e suficient

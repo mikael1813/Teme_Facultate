@@ -1,0 +1,17 @@
+function algoritm_trapez(f,a,b,n)
+    h = (b-a)/n;
+    sum = 0;
+    for i = 1:n-1
+        sum = sum + f(a + i*h);
+    end
+    sum = sum*2;
+
+    e = a + (b-a)*rand();
+    df = diff(f,x);
+    ddf = diff(df,x);
+
+    R1f = -((b-a)^3)/(12*n^2)*ddf(e);
+    integral = b-a
+
+
+end

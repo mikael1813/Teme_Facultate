@@ -1,0 +1,90 @@
+%{
+
+#include <stdio.h>
+#include <string.h>
+#include "ex.tab.h"
+void showError();
+%}
+
+%option yylineno
+DIGIT [0-9]
+FLOAT \.?[0-9]+
+id        [a-zA-Z]+[0-9a-zA-Z]*
+SEPARATOR [ \n]*
+SEMN [+-]?
+SEMICOLON ;
+CUVANT \".*\"
+READ read
+PRINT print
+INT int
+STRING string
+STRUCT struct
+IF if
+ELSE else
+WHILE while
+OP_LOGIC (&&|\|\|)
+OP_ARITMETIC (\+|-|\*|\/|%)
+EQUAL =
+OP_RELATIONAL (>=|>|<|<=|==|!=)
+VIRGULA ,
+LEFTP \(
+RIGHTP \)
+LEFTPP \{
+RIGHTPP \}
+
+
+
+%%
+
+
+
+{SEMICOLON}{SEPARATOR}                     {//printf("Semicolon\n");
+                                                return (SEMICOLON);
+                                        }
+
+
+{LEFTP}{SEPARATOR}                              {return (LEFTP);}
+{LEFTPP}{SEPARATOR}                              {return (LEFTPP);}
+{RIGHTPP}{SEPARATOR}                              {return (RIGHTPP);}
+{RIGHTP}{SEPARATOR}                              {return (RIGHTP);}
+{EQUAL}{SEPARATOR}                              {return (EQUAL);}
+{SEMN}{SEPARATOR}                               {return (SEMN);}
+{VIRGULA}{SEPARATOR}                            {return (VIRGULA);}
+{READ}{SEPARATOR}                               {return (READ);}
+
+{PRINT}{SEPARATOR}                              {return (PRINT);}
+
+{INT}{SEPARATOR}                                {return (INT);}
+{STRING}{SEPARATOR}                     {return (STRING);}
+{STRUCT}{SEPARATOR}                     {return (STRUCT);}
+{IF}{SEPARATOR}                         {return (IF);}
+{ELSE}{SEPARATOR}                               {return (ELSE);}
+{WHILE}{SEPARATOR}                              {return (WHILE);}
+{OP_LOGIC}{SEPARATOR}                   {return (OP_LOGIC);}
+{OP_ARITMETIC}{SEPARATOR}                       {/*printf("op_aritmetic");*/return (OP_ARITMETIC);}
+{OP_RELATIONAL}{SEPARATOR}                      {return (OP_RELATIONAL);}
+
+
+{id}{SEPARATOR}                 {
+                                        sscanf(yytext, "%s", yylval.name);
+                                        //printf("id: %s\n",yytext);
+                                        return (ID);
+                                }
+{SEMN}[1-9]+{DIGIT}*{FLOAT}{SEPARATOR}|{SEMN}0{SEPARATOR}|{SEMN}[1-9]+{DIGIT}*{SEPARATOR}  {
+                                                //printf("num: %s\n",yytext);
+                                                yylval.number = atoi(yytext);
+                                                return (NUM);
+                                        }
+
+{CUVANT}{SEPARATOR}                        {return (CUVANT);}
+
+
+
+.                    {showError(yytext); return(OTHER);}
+
+%%
+
+
+void showError(char* yytext){
+    printf("Other input: %s",yytext);
+}

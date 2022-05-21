@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="cars">Choose a car:</label>
+
+<select name="cars" id="cars" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+</select>
+
+<label for="fast cars">Choose a country:</label>
+
+<select name="fast cars" id="fast cars" ondblclick="myFunction()" multiple>
+    <option value="Ferrari">Ferrari</option>
+    <option value="Bugati">Bugati</option>
+    <option value="GTX">GTX</option>
+</select>
+
+<script>
+    document.getElementById("fast cars").ondblclick=function (){
+        var option = document.createElement("option");
+        option.text = this.options[this.selectedIndex].value;
+        document.getElementById("cars").add(option);
+        document.getElementById("fast cars").remove(this.selectedIndex);
+    }
+    document.getElementById("cars").ondblclick=function (){
+        var option = document.createElement("option");
+        option.text = this.options[this.selectedIndex].value;
+        document.getElementById("fast cars").add(option);
+        document.getElementById("cars").remove(this.selectedIndex);
+    }
+</script>
+
+
+</body>
+</html>

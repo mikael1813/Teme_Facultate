@@ -1,0 +1,242 @@
+%{
+        #include <math.h>                       /* -> atof()  */
+        #include <string.h>
+        #include <stdio.h>
+        #include <stdlib.h>
+        int fipcount=0,tiscount=0,errorcount=0,lineerror[255],linecount=1;
+        char fip1[255][255],fip2[255][255],tis[255][255],error[255][255];
+%}
+
+%option noyywrap
+
+DIGIT [0-9]
+FLOAT \.?[0-9]+
+ID [a-zA-Z]+[0-9a-zA-Z]*
+
+FIP read|print|int|string|struct|if|else|while
+
+SEPARATOR "*"|"+"|"-"|"/"|"%"|>|>=|<=|<|!=|&&|;|,|=|" "|"("|")"|"{"|"}"
+
+STRING \".*\"
+%%
+
+
+{FIP}{SEPARATOR}            {
+                                char aux[255];
+                                strcpy(aux,yytext);
+                                char sep = aux[strlen(aux)-1];
+                                aux[strlen(aux)-1]='\0';
+                                printf("FIP %s",yytext);
+                                strcpy(fip1[fipcount],yytext);
+                                fip2[fipcount][0]='-';
+                                fip2[fipcount][1]='1';
+                                fip2[fipcount][2]='\0';
+                                fipcount++;
+                                int x = strlen(aux);
+                                //printf("Separator = %c\n",sep);
+                                if(sep != ' '){
+                                        fip1[fipcount][0]=sep;
+                                        fip1[fipcount][1]='\0';
+                                        fip2[fipcount][0]='-';
+                                        fip2[fipcount][1]='1';
+                                        fip2[fipcount][2]='\0';
+                                        fipcount++;
+                                }
+                            }
+
+{ID}{SEPARATOR}         {
+                        printf("ID %s",yytext);
+                        char aux[255],sep;
+                        strcpy(aux,yytext);
+                        sep = aux[strlen(aux)-1];
+                        aux[strlen(aux)-1] = '\0';
+                        int ok = 1;
+                        for(int i=0;i<tiscount;i++){
+                                if(strcmp(aux,tis[i]) == 0){
+                                        ok = 0;
+                                        strcpy(fip1[fipcount],aux);
+                                        char buffer[255];
+                                        sprintf(buffer,"%d",i);
+                                        strcpy(fip2[fipcount],buffer);
+                                }
+                        }
+                        if(ok){
+                                strcpy(tis[tiscount],aux);
+                                tiscount++;
+                                strcpy(fip1[fipcount],aux);
+                                char buffer[255];
+                                sprintf(buffer,"%d",tiscount-1);
+                                strcpy(fip2[fipcount],buffer);
+                        }
+                        fipcount++;
+                        if(sep != ' '){
+                                fip1[fipcount][0]=sep;
+                                fip1[fipcount][1]='\0';
+                                fip2[fipcount][0]='-';
+                                fip2[fipcount][1]='1';
+                                fip2[fipcount][2]='\0';
+                                fipcount++;
+                        }
+                }
+
+
+[1-9]+{DIGIT}*{FLOAT}{SEPARATOR}|0{SEPARATOR}|[1-9]+{DIGIT}*{SEPARATOR}         {
+                        printf("NUMAR %s",yytext);
+                        char aux[255],sep;
+                        strcpy(aux,yytext);
+                        sep = aux[strlen(aux)-1];
+                        aux[strlen(aux)-1] = '\0';
+                        int ok = 1,poz;
+                        for(int i=0;i<tiscount;i++){
+                                if(strcmp(aux,tis[i]) == 0){
+                                        ok = 0;
+                                        //poz=i;
+                                        strcpy(fip1[fipcount],aux);
+                                        char buffer[255];
+                                        sprintf(buffer,"%d",i);
+                                        strcpy(fip2[fipcount],buffer);
+                                }
+                        }
+                        if(ok){
+                                strcpy(tis[tiscount],aux);
+                                tiscount++;
+                                strcpy(fip1[fipcount],aux);
+                                char buffer[255];
+                                sprintf(buffer,"%d",tiscount-1);
+                                strcpy(fip2[fipcount],buffer);
+                        }
+                        fipcount++;
+                        if(sep!=' '){
+                                fip1[fipcount][0]=sep;
+                                fip1[fipcount][1]='\0';
+                                fip2[fipcount][0]='-';
+                                fip2[fipcount][1]='1';
+                                fip2[fipcount][2]='\0';
+                                fipcount++;
+                        }
+                }
+
+{STRING}{SEPARATOR}     {
+                                printf("STRING %s",yytext);
+                                char aux[255],sep;
+                        strcpy(aux,yytext);
+                        sep = aux[strlen(aux)-1];
+                        aux[strlen(aux)-1] = '\0';
+                        int ok = 1,poz;
+                        for(int i=0;i<tiscount;i++){
+                                if(strcmp(aux,tis[i]) == 0){
+                                        ok = 0;
+                                        //poz=i;
+                                        strcpy(fip1[fipcount],aux);
+                                        char buffer[255];
+                                        sprintf(buffer,"%d",i);
+                                        strcpy(fip2[fipcount],buffer);
+                                }
+                        }
+                        if(ok){
+                                strcpy(tis[tiscount],aux);
+                                tiscount++;
+                                strcpy(fip1[fipcount],aux);
+                                char buffer[255];
+                                sprintf(buffer,"%d",tiscount-1);
+                                strcpy(fip2[fipcount],buffer);
+                        }
+                        fipcount++;
+                        if(sep!=' '){
+                                fip1[fipcount][0]=sep;
+                                fip1[fipcount][1]='\0';
+                                fip2[fipcount][0]='-';
+                                fip2[fipcount][1]='1';
+                                fip2[fipcount][2]='\0';
+                                fipcount++;
+                        }
+                        }
+
+{SEPARATOR}     {
+                        printf("%s",yytext);
+                        if(yytext[0] != ' '){
+                                strcpy(fip1[fipcount],yytext);
+                                fip2[fipcount][0]='-';
+                                fip2[fipcount][1]='1';
+                                fip2[fipcount][2]='\0';
+                                fipcount++;
+                        }
+                }
+
+
+"{"[^}\n]*"}"                   /* eat up one-line comments */
+
+\n                      {
+                                linecount++;
+                                printf("%s",yytext);
+
+                        }
+
+.                       {
+                                printf("ERROR %s",yytext);
+                                strcpy(error[errorcount],yytext);
+                                lineerror[errorcount] = linecount;
+                                errorcount++;
+                        }
+
+%%
+main( argc, argv )
+int argc;
+char **argv;
+{
+    ++argv, --argc; /* skip over program name */
+    if ( argc > 0 )
+        yyin = fopen( argv[0], "r" );
+    else
+        yyin = stdin;
+    yylex();
+        if(errorcount>0){
+                printf("\nERRORS\n");
+                for(int i = 0;i<errorcount;i++){
+                        printf("Error at %s, line %d\n",error[i],lineerror[i]);
+                }
+        }
+        else{
+                char xxx[255][255];
+                for(int i = 0;i<tiscount;i++){
+                        strcpy(xxx[i],tis[i]);
+                }
+
+                int okk = 1;
+                while(okk){
+                        okk=0;
+                        for(int i = 0;i<tiscount-1;i++){
+                                if(strcmp(xxx[i],xxx[i+1])>0){
+                                        char ax[255];
+                                        strcpy(ax,xxx[i]);
+                                        strcpy(xxx[i],xxx[i+1]);
+                                        strcpy(xxx[i+1],ax);
+                                        okk=1;
+                                }
+                        }
+                }
+
+                for(int i=0;i<fipcount;i++){
+                        if(fip2[i][0]!='-'){
+                                char atom[255];
+                                int poz = atoi(fip2[i]);
+                                for(int j=0;j<tiscount;j++){
+                                        if(strcmp(tis[poz],xxx[j]) == 0){
+                                                sprintf(atom,"%d",j);
+                                                break;
+                                        }
+                                }
+                                strcpy(fip2[i],atom);
+                        }
+                }
+
+                printf("\nTIS\n");
+                for(int i = 0;i<tiscount;i++){
+                        printf("%s\n",xxx[i]);
+                }
+                printf("\nFIP\n");
+                for(int i=0;i<fipcount;i++){
+                        printf("%s  %s\n",fip1[i],fip2[i]);
+                }
+        }
+}

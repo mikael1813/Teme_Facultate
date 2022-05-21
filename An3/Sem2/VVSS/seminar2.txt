@@ -1,0 +1,14 @@
+Seminar 2
+
+1)
+
+preconditie: x nr. natural 
+postconditie: true || false ; verdict apartine {true,false}
+
+ECP: 
+
+NR. crt.	Conditie	EC valid	EC nonvalid
+
+  1		x nr nat.	x nr. nat.	
+  2						x nu e natural
+  3 

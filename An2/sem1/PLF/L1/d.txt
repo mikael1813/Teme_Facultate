@@ -1,0 +1,22 @@
+;cmmdc (a , b) = a + b , daca a = 0 sau b = 0
+;              = cmmdc(a%b b) , daca a > b
+;              = cmmdc(a b%a) , altfel
+
+
+(defun cmmdc (a b)
+	(cond
+		((or (= a 0) (= b 0)) (+ a b))
+		((> a b) (cmmdc (rem a b) b))
+		(t (cmmdc a (rem b a)))
+))
+
+
+;cmmdcl(l1..ln) = 	l1 , daca lista mai are un singur element
+;					cmmdc(l1 , cmmdcl(l2..ln)), altfel
+
+
+(defun cmmdcl(l)
+	(cond
+		((null (cdr l)) (car l))
+		(t(cmmdc (car l) (cmmdcl (cdr l))))
+))

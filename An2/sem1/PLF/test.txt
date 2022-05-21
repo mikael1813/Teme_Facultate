@@ -1,0 +1,47 @@
+
+
+(defun select(n L x)
+	(cond
+		((null L) nil)
+		((= n x) (car L))
+		(t (select n (cdr L) (+ x 1)))
+	)
+)
+
+(defun tru(n L)
+	(select n L 1)
+)
+
+(defun schimb(L e f)
+	(cond
+		((= L e) f)
+		(t L)
+	)	
+)
+
+//ce trebuie mai jos cu mapcar
+
+func = list(lambda(l1),..lambda(ln))
+
+(defun func(L e f)
+	(mapcar #'(lambda (x)
+				(cond
+					((equal x e) f)
+					(t x)
+				)
+				)
+				L
+	)
+)
+
+
+
+
+(DEFUN MODIF (L)
+(COND
+((NUMBERP L) (* 2 L)) 
+((ATOM L) L) 
+
+(T (MAPCAR #'MODIF L))
+)
+)

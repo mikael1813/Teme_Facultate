@@ -1,0 +1,3 @@
+﻿  Intro.cpp
+C:\Info An 3\Sem 1\SS\Lab1\SoftSec2\SoftSec\Intro\Intro.cpp(58,6): warning C4189: 'localParam': local variable is initialized but not referenced
+  Intro.vcxproj -> C:\Info An 3\Sem 1\SS\Lab1\SoftSec2\SoftSec\x64\Debug\Intro.exe

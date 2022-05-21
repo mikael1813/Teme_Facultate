@@ -1,0 +1,8 @@
+Accelerare(Sp) = timp secvential/ timp paralel -- Ts/Tp
+
+Eficienta(E) = Sp/p
+E = Ts / (p*Tp)
+
+Cost(Cp) = p(nr max procese) * Tp(timp paralel)
+
+Daca n = putere de 2 Tp = logn

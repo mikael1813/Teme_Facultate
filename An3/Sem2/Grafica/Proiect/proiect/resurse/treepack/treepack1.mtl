@@ -1,0 +1,209 @@
+# Blender MTL File: 'treepack1.blend'
+# Material Count: 15
+
+newmtl Material.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump bark003-normal.jpg
+map_Kd bark003-color.jpg
+map_Ks bark003-spec.jpg
+
+newmtl Material.003
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump tilebarknormal.jpg
+map_Kd tilebark.jpg
+map_Ks tilebarkspec.jpg
+
+newmtl Material.004
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump branch-texturenormal-png.png
+map_Kd branch-texture-png.png
+map_Ks branch-texturespec-png.png
+map_d branch-texture-png.png
+
+newmtl Material.005
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump branch-texturenormal-png.png
+map_Kd branch-texture-png.png
+map_Ks branch-texturespec-png.png
+map_d branch-texture-png.png
+
+newmtl Material.006
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump branch-texturenormal-png.png
+map_Kd branch-texture-png.png
+map_Ks branch-texturespec-png.png
+map_d branch-texture-png.png
+
+newmtl Material.007
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump bark004-normal.jpg
+map_Kd bark004-color.jpg
+map_Ks bark004-spec.jpg
+map_d bark004-color.jpg
+
+newmtl Material.008
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump bark001-normal.jpg
+map_Kd bark001-color.jpg
+map_Ks bark001-spec.jpg
+
+newmtl Material.024
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump combobranchnormal.png
+map_Kd combobranch.png
+map_Ks combobranchspec.png
+map_d combobranch.png
+
+newmtl Material.025
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump combobranch3normal.png
+map_Kd combobranch3.png
+map_Ks combobranch3spec.png
+map_d combobranch3.png
+
+newmtl Material.026
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump combobranch2normal.png
+map_Kd combobranch2.png
+map_Ks combobranch2spec.png
+map_d combobranch2.png
+
+newmtl Material.027
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump combobranch2normal.png
+map_Kd combobranch2.png
+map_Ks combobranch2spec.png
+map_d combobranch2.png
+
+newmtl Material.028
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump combobranch4normal.png
+map_Kd combobranch4.png
+map_Ks combobranch4spec.png
+map_d combobranch4.png
+
+newmtl Material.029
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump combobranch4normal.png
+map_Kd combobranch4.png
+map_Ks combobranch4spec.png
+map_d combobranch4.png
+
+newmtl Material.030
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump combobranch3normal.png
+map_Kd combobranch3.png
+map_Ks combobranch3spec.png
+map_d combobranch3.png
+
+newmtl Material.058
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump combobranchnormal.png
+map_Kd combobranch.png
+map_Ks combobranchspec.png
+map_d combobranch.png

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlataCuCardController">
+   <children>
+      <Label layoutX="38.0" layoutY="25.0" text="Plateste cu un card de credit sau debit">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <TextField layoutX="146.0" layoutY="119.0" prefHeight="26.0" prefWidth="307.0" promptText="Numar Card" />
+      <TextField layoutX="146.0" layoutY="159.0" promptText="Data de expirare" />
+      <TextField layoutX="304.0" layoutY="159.0" promptText="Cod de securitate" />
+      <TextField layoutX="146.0" layoutY="200.0" promptText="Nume" />
+      <TextField layoutX="304.0" layoutY="200.0" promptText="Prenume" />
+      <Label layoutX="244.0" layoutY="247.0" text="Adresa Facturare">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="146.0" layoutY="290.0" prefHeight="26.0" prefWidth="307.0" promptText="Linia 1 de adresa" />
+      <TextField layoutX="146.0" layoutY="334.0" prefHeight="26.0" prefWidth="307.0" promptText="Linia 2 de adresa (optionala)" />
+      <TextField layoutX="146.0" layoutY="383.0" promptText="Tara" />
+      <TextField layoutX="308.0" layoutY="383.0" promptText="Cod postal" />
+      <TextField layoutX="146.0" layoutY="425.0" promptText="Judet" />
+      <TextField layoutX="308.0" layoutY="425.0" promptText="Oras" />
+      <Button layoutX="535.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#eventSubmit" text="Submit" />
+   </children>
+</AnchorPane>

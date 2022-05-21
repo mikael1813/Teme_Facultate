@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="161.0" layoutY="127.0" prefHeight="27.0" prefWidth="65.0" text="Nume" />
+      <Label alignment="CENTER" layoutX="186.0" layoutY="14.0" text="Adauga/Modifica Spectacol">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField layoutX="268.0" layoutY="128.0" />
+      <Button layoutX="239.0" layoutY="360.0" mnemonicParsing="false" text="Salveaza Spectacolul" />
+      <Label alignment="CENTER" layoutX="170.0" layoutY="190.0" prefHeight="18.0" prefWidth="47.0" text="Data" />
+      <TextField layoutX="268.0" layoutY="187.0" />
+   </children>
+</AnchorPane>

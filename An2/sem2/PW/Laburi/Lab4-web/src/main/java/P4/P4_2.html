@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border-spacing: 0;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+    </style>
+</head>
+<body>
+<table id="table">
+    <tr>
+        <th onclick="myFunction(this)">Fructe</th>
+        <th onclick="myFunction(this)">Pret</th>
+        <th onclick="myFunction(this)">Cantitate</th>
+    </tr>
+    <tr>
+        <td>Mere</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Pere</td>
+        <td>2</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>Strugure</td>
+        <td>5</td>
+        <td>3</td>
+    </tr>
+</table>
+<script src="../jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var crescator = false;
+        $("th").click(function () {
+            var table = [];
+            var index = $(this).index();
+            $("tr").each(function () {
+                var rows = [];
+                $(this).children().each(function () {
+                    rows.push($(this).text());
+                });
+                table.push(rows);
+            })
+            if (crescator == false) crescator = true;
+            else crescator = false;
+
+
+            var switching, i, j, x, y, shouldSwitch;
+            switching = true;
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+                // Start by saying: no switching is done:
+                switching = false;
+                //alert(rows[n].cells.length);
+                /* Loop through all table rows (except the
+                first, which contains table headers): */
+                for (i = 1; i < (table.length) - 1; i++) {
+                    // Start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /* Get the two elements you want to compare,
+                    one from current row and one from the next: */
+                    //alert(x.innerHTML.toLowerCase());
+                    //alert(y.innerHTML.toLowerCase());
+                    // Check if the two rows should switch place:
+                    if (table[i][index] > table[i + 1][index] && crescator == true) {
+                        // If so, mark as a switch and break the loop:
+                        //shouldSwitch = true;
+                        //break;
+                        for (j = 0; j < table[i].length; j++) {
+                            let c = table[i][j];
+                            table[i][j] = table[i + 1][j]
+                            table[i + 1][j] = c;
+                            switching = true;
+                        }
+                    }
+                    if (table[i][index] < table[i + 1][index] && crescator == false) {
+                        // If so, mark as a switch and break the loop:
+                        //shouldSwitch = true;
+                        //break;
+                        for (j = 0; j < table.length; j++) {
+                            let c = table[i][j];
+                            table[i][j] = table[i + 1][j]
+                            table[i + 1][j] = c;
+                            switching = true;
+                        }
+                    }
+                }
+            }
+            i = 0;
+            //$("table").empty();
+            $("tr").each(function () {
+                j = 0;
+                $(this).children().each(function () {
+                    $(this).html(table[i][j]);
+                    j = j + 1;
+                });
+                i = i + 1;
+            })
+        });
+    });
+</script>
+</body>
+</html>

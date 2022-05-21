@@ -1,0 +1,1 @@
+pt n = 10 fa folosind toata matricea

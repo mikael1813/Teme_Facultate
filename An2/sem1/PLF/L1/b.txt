@@ -1,0 +1,14 @@
+;inlocuieste(e ,l1..ln x) = [], daca l este null
+;						   = x (+) inlocuieste(e,l2..ln,x), daca l1 = e
+;                          = l1 (+) inlocuieste(e,l2..ln,x), daca l1 este un atom
+;                          = inlocuieste(e,l1,x) (+) inlocuieste(e,l2..ln,x), altfel
+
+(defun inlocuieste(E L L1)
+	(cond
+		((null L) (list))
+		((equal E (car L)) (append L1 (inlocuieste E (cdr L) L1)))
+		((atom (car L)) (append (list (car L)) (inlocuieste E (cdr L) L1)))
+		(t (cons (inlocuieste E (car L) L1) (inlocuieste E (cdr L) L1)))
+))
+
+

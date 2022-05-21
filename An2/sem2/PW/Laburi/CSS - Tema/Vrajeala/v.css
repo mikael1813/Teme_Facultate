@@ -1,0 +1,9 @@
+.large{
+    width: 200px;
+    border: 1px solid red;
+    height: 10px;
+}
+#red{
+    width: 500px;
+    background-color: red;
+}

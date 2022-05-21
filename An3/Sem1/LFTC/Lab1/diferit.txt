@@ -1,0 +1,7 @@
+diferenta 1 - ;; dupa fiecare instructiune
+          2 - doar 3 op. aritmetice
+          3 - doar 2 op. realtionale
+          4 - o expr. boolean poate avea doar 2 expresii care se compara
+	  5 - programul poate avea max. 2 instructiuni
+	  6 - ID-urile pot fi formate doar din litere
+	  7 - constantele sunt doar numere intregi >= 0 

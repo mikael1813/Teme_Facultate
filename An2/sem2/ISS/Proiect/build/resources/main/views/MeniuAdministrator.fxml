@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="1144.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MeniuAdministratorController">
+   <children>
+      <TableView fx:id="tableViewSpectacole" layoutX="188.0" layoutY="79.0" onMouseClicked="#eventSelectSpectacol" prefHeight="200.0" prefWidth="277.0">
+        <columns>
+          <TableColumn fx:id="tableColumnID" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tableColumnNume" prefWidth="122.20001220703125" text="Nume" />
+            <TableColumn fx:id="tableColumnData" prefWidth="79.39999389648438" text="Data" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableViewLocuri" layoutX="540.0" layoutY="79.0" onMouseClicked="#eventSelectLoc" prefHeight="200.0" prefWidth="406.0">
+        <columns>
+          <TableColumn fx:id="tableColumnID2" prefWidth="41.20001220703125" text="Id" />
+          <TableColumn fx:id="tableColumnLoja" prefWidth="46.600006103515625" text="Loja" />
+            <TableColumn fx:id="tableColumnNumar" prefWidth="52.5999755859375" text="Numar" />
+            <TableColumn fx:id="tableColumnPret" prefWidth="74.60003662109375" text="Pret" />
+            <TableColumn fx:id="tableColumnStare" minWidth="0.0" prefWidth="124.5999755859375" text="Stare" />
+            <TableColumn fx:id="tableColumnRand" prefWidth="72.20001220703125" text="Rand" />
+        </columns>
+      </TableView>
+      <Label layoutX="718.0" layoutY="28.0" prefHeight="27.0" prefWidth="49.0" text="Locuri">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="196.0" layoutY="538.0" mnemonicParsing="false" onMouseClicked="#addShow" text="Adauga Spectacol" />
+      <Button layoutX="342.0" layoutY="538.0" mnemonicParsing="false" onMouseClicked="#updateShow" text="Modifica Spectacol" />
+      <Button layoutX="24.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#deleteShow" text="Sterge Spectacol" />
+      <Button layoutX="679.0" layoutY="538.0" mnemonicParsing="false" onMouseClicked="#addLoc" text="Adauga Loc" />
+      <Button layoutX="817.0" layoutY="538.0" mnemonicParsing="false" onMouseClicked="#updateLoc" text="Modifica Loc" />
+      <Button layoutX="1001.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#deleteLoc" text="Sterge Loc" />
+      <Button layoutX="525.0" layoutY="607.0" mnemonicParsing="false" onMouseClicked="#eventLogout" text="Deconectare" />
+      <TextField fx:id="txtNume" layoutX="252.0" layoutY="345.0" />
+      <TextField fx:id="txtData" layoutX="253.0" layoutY="453.0" />
+      <Label layoutX="311.0" layoutY="298.0" text="Nume" />
+      <Label layoutX="315.0" layoutY="418.0" text="Data" />
+      <TextField fx:id="txtNumar" layoutX="718.0" layoutY="303.0" />
+      <TextField fx:id="txtRand" layoutX="718.0" layoutY="358.0" />
+      <TextField fx:id="txtLoja" layoutX="718.0" layoutY="414.0" />
+      <TextField fx:id="txtPret" layoutX="718.0" layoutY="475.0" />
+      <Label layoutX="653.0" layoutY="307.0" prefHeight="26.0" prefWidth="37.0" text="Numar" />
+      <Label layoutX="657.0" layoutY="362.0" text="Rand" />
+      <Label layoutX="659.0" layoutY="418.0" text="Loja" />
+      <Label layoutX="659.0" layoutY="479.0" text="Pret" />
+      <Label layoutX="277.0" layoutY="28.0" prefHeight="28.0" prefWidth="100.0" text="Spectacole">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="901.0" layoutY="307.0" text="Adauga" />
+      <TextField fx:id="txtL" layoutX="947.0" layoutY="303.0" prefHeight="26.0" prefWidth="33.0" />
+      <Label layoutX="987.0" layoutY="308.0" text="locuri pe randul" />
+      <TextField fx:id="txtR" layoutX="1081.0" layoutY="303.0" prefHeight="26.0" prefWidth="38.0" />
+      <Label layoutX="960.0" layoutY="337.0" text="si loja" />
+      <TextField fx:id="txtLo" layoutX="999.0" layoutY="333.0" prefHeight="26.0" prefWidth="30.0" />
+      <Label layoutX="1037.0" layoutY="336.0" text="cu" />
+      <Label layoutX="960.0" layoutY="371.0" text="pretul" />
+      <TextField fx:id="txtP" layoutX="1011.0" layoutY="367.0" prefHeight="26.0" prefWidth="50.0" />
+      <Button layoutX="985.0" layoutY="453.0" mnemonicParsing="false" onMouseClicked="#addLocuri" text="AdaugaLocuri" />
+   </children>
+</AnchorPane>

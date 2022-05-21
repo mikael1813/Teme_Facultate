@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xml:lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<head>
+    <title>
+        Proiect
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<body onload="init()">
+<p>
+    <input type="file" accept="image/*" name="image" id="file" onchange="handleImage(event)" style="display: none;">
+</p>
+<p>
+    <label for="file" style="cursor: pointer;">Upload Image</label>
+</p>
+<div>
+    <input type="button" value="save" id="btn" size="30" onclick="save()">
+    <input type="button" value="clear" id="clr" size="23" onclick="erase()">
+    <input type="button" value="get" id="get" size="23" onclick="get()">
+    <input type="button" value="get Masks" id="get_masks" size="23" onclick="setMasks()">
+    <button onclick="displayString()">
+        Display
+    </button>
+
+    <input type="button" value="Unselect All" style="float: right;" onclick="unselectAll()">
+    <input type="button" value="Select All" style="float: right;" onclick="selectAll()">
+</div>
+<!--<div >-->
+<!--<div style="position: relative" class="column img-container">-->
+<!--    <canvas class="img-resize" id="layer1" width="400" height="400"-->
+<!--            style=" z-index: 0; border:2px solid;"></canvas>-->
+<!--    <canvas class="img-resize" id="layer2" width="400" height="400"-->
+<!--            style=" z-index: 1; border:2px solid;"></canvas>-->
+<!--</div>-->
+<!--<div style="position: relative" class="column img-container">-->
+<!--    <img id="canvasimg" style="display:none; border:2px solid;" class="img-resize">-->
+<!--</div>-->
+<!--</div>-->
+<div id="main_div" class="parent">
+
+    <canvas id="layer2" class="canvas1"></canvas>
+
+    <canvas id="layer1" class="canvas2"></canvas>
+
+    <canvas id="layer3" style="display: none"></canvas>
+
+    <img id="canvasimg" style="display: none; border:2px solid;" class="canvas-img-horizontal">
+
+    <div id='div_input' class="input" style="border: solid">
+        <input type="text" id="filtru" placeholder="Filter masks" style="width: 100%; padding: 0;border: none;">
+    </div>
+
+</div>
+
+</body>
+</html>

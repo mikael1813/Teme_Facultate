@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:properties id="jdbcProps" location="classpath:chatserver.properties"/>
+
+    <bean id="administratorRepo" class="repos.database.AdministratorDBRepository"/>
+    <bean id="clientRepo" class="repos.database.ClientDBRepository"/>
+    <bean id="locRepo" class="repos.database.LocDBRepository"/>
+    <bean id="rezervareRepo" class="repos.database.RezervareDBRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+    <bean id="spectacolRepo" class="repos.database.SpectacolDBRepository"/>
+
+    <bean id="chatService" class="server.Service">
+        <constructor-arg ref="administratorRepo"/>
+        <constructor-arg ref="clientRepo"/>
+        <constructor-arg ref="locRepo"/>
+        <constructor-arg ref="rezervareRepo"/>
+        <constructor-arg ref="spectacolRepo"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+
+        <property name="serviceName" value="Chat"/>
+        <property name="service" ref="chatService"/>
+        <property name="serviceInterface" value="services.IService"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+
+
+
+</beans>

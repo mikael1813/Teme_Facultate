@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1648738830 source:c:\info\info an 3\sem2\grafica\lab2\1fp\1fp\main.cpp
+	<GLFW/glfw3.h>
+	<GL/glut.h>
+	<unistd.h>
+	<math.h>
+	<iostream>
+
+1648141085 source:c:\info\info an 3\sem2\grafica\lab2\1fp\1fp\glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<winapifamily.h>
+	<dlfcn.h>
+

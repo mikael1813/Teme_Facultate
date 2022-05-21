@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.GameController">
+   <children>
+      <Button layoutX="274.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#send" text="Send" />
+      <Label fx:id="label1" layoutX="210.0" layoutY="77.0" text="Label" />
+      <Label fx:id="label2" layoutX="210.0" layoutY="115.0" text="Label" />
+      <Label fx:id="label3" layoutX="210.0" layoutY="151.0" text="Label" />
+      <TextField fx:id="txt1" layoutX="274.0" layoutY="73.0" />
+      <TextField fx:id="txt2" layoutX="274.0" layoutY="111.0" />
+      <TextField fx:id="txt3" layoutX="274.0" layoutY="147.0" />
+      <Label text="Label" />
+      <Label layoutX="194.0" layoutY="251.0" text="Care ai ales" />
+      <TextField fx:id="txt" layoutX="274.0" layoutY="247.0" />
+   </children>
+</AnchorPane>

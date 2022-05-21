@@ -1,0 +1,11 @@
+rootProject.name = 'Project Java Client-Server'
+include 'ChatClientFX'
+include 'Model'
+include 'Networking'
+include 'Persistance'
+include 'Server'
+include 'Services'
+include 'RestServices'
+include 'RestServices'
+include 'app-rest-client'
+

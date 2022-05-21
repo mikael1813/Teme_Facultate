@@ -1,0 +1,14 @@
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\bin\Debug\AppNetworking.dll.config
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\bin\Debug\AppNetworking.dll
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\bin\Debug\AppNetworking.pdb
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\bin\Debug\AppModel.dll
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\bin\Debug\Services.dll
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\bin\Debug\AppModel.pdb
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\bin\Debug\AppModel.dll.config
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\bin\Debug\Services.pdb
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\bin\Debug\Services.dll.config
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\obj\Debug\AppNetworking.csprojAssemblyReference.cache
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\obj\Debug\AppNetworking.csproj.CoreCompileInputs.cache
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\obj\Debug\AppNetworking.csproj.CopyComplete
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\obj\Debug\AppNetworking.dll
+C:\Info An 2\sem 2\Metode de proiectare si programare\Proiecte\Proiect C-Sharp Client-Server Sockets\AppPersistance\AppNetworking\obj\Debug\AppNetworking.pdb

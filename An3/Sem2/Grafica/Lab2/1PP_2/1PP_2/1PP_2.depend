@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1648739035 source:c:\info\info an 3\sem2\grafica\lab2\1pp_2\1pp_2\main.cpp
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<string>
+	<iostream>
+	<vector>
+	<fstream>
+	<windows.h>
+
+1648730617 source:c:\info\info an 3\sem2\grafica\lab2\1pp_2\1pp_2\glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<winapifamily.h>
+	<dlfcn.h>
+

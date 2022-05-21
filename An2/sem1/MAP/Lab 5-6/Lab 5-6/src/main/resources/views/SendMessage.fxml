@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="597.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.SendMessageController">
+   <children>
+      <TableView fx:id="tableView" layoutX="64.0" layoutY="96.0" onMouseClicked="#handleUserClicked" prefHeight="242.0" prefWidth="577.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tableColumnFName" prefWidth="235.20001983642578" text="Nume" />
+            <TableColumn fx:id="tableColumnLName" prefWidth="228.79998779296875" text="Prenume" />
+        </columns>
+      </TableView>
+      <Label layoutX="168.0" layoutY="367.0" text="Utilizatorii alesi:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="293.0" layoutY="366.0" prefHeight="22.0" prefWidth="253.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="46.0" text="Alege Utilizatorii carui sa-i trimiti un mesaj">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonSelectAll" layoutX="103.0" layoutY="527.0" mnemonicParsing="false" onMouseClicked="#handleSelectAll" text="Select All">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonDeleteAll" layoutX="311.0" layoutY="527.0" mnemonicParsing="false" onMouseClicked="#handleDeleteAll" text="Delete All">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonSend" layoutX="549.0" layoutY="527.0" mnemonicParsing="false" onMouseClicked="#handleSend" text="Send">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="200.0" layoutY="438.0" text="Mesaj">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" layoutX="306.0" layoutY="411.0" prefHeight="76.0" prefWidth="285.0" />
+   </children>
+</AnchorPane>

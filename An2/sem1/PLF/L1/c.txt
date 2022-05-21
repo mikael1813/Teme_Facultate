@@ -1,0 +1,31 @@
+;len (x) = 10 , daca x<10
+;		 = 10*(len x/10) ,altfel	
+
+(defun len (x)
+	(cond
+		((< x 10) 10)
+		(t (* 10 (len (floor x 10))))
+))
+
+;leng(x) = 1, daca x = 0
+;        = 10 * leng(x-1) ,altfel
+
+(defun leng (x)
+	(cond
+		((= x 0) 1)
+		(t (* 10 (leng (- x 1))))
+))
+
+;convert(x1..xn) = 0, daca x e vida
+;                = x1 * leng(length(x)-1) + convert(x2..xn), atlfel
+
+(defun convert (x)
+	(cond
+		((null x) 0)
+		(t (+ (* (car x) (leng (- (length x) 1))) (convert (cdr x))))
+))
+
+
+(defun zecimale(a b)
+	(/ (+ (convert a) (convert b)) (len (+ (convert a) (convert b))))
+)

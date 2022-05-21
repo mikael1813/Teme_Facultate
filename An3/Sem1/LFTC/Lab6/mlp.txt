@@ -1,0 +1,12 @@
+program -> list_instr
+list_instr -> instr ; list_instr | instr;
+instr -> instr_read | instr_declare | instr_print | instr_atribuire
+instr_read -> read ID
+instr_print -> print ID
+ID -> [a-zA-Z]+[0-9]*
+instr_declare -> int ID
+instr_atribuire -> ID = expr
+expr -> VAR OP expr | VAR
+VAR -> ID | NR
+NR -> [1-9]+[0-9]*
+OP -> + | - | * | /

@@ -1,0 +1,11 @@
+<input> -> <alfabet>
+	   <stari>
+           <stari_finale>
+	   <tranzitii>	
+
+<alfabet> -> [0-9,-,.],<alfabet> | [0-9,-,.]
+<stari> -> [a-zA-Z0-9]+,<stari> | [a-zA-Z0-9]
+<stari_finale> -> <stari>,<stari_finale> | <stari>
+<tranzitie> -> <stari>,<alfabet>
+<tranzitii> -> <tranzitie>
+               <tranzitii> | <tranzitie>

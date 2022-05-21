@@ -1,0 +1,13 @@
+
+=
+ClientWeb.iml,6\a\6ae9176239fd2bfd1558bc955e659a6fb21e6f3b
+9
+	jquery.js,7\a\7a0d2a18212b79b67dee0e91e19cf1b654062c92
+@
+draw_canvas.html,5\c\5ca32f880514e8d6efba71703376475fa6310632
+9
+	script.js,3\1\313d6864fa48b411d082f7692efd0c0892788fc4
+9
+	style.css,4\6\46e3381e9569c09e85a30b9e5a2af7525ee9fd78
+9
+	home.html,3\a\3ab23a37ff2f5d3f0397c032c9981f48158748e3
